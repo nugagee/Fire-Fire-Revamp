@@ -1,11 +1,8 @@
-// import girlImg from "../assets/img/girl.png";
-// import calImg from "../assets/img/calendar.svg";
-// import uxImg from "../assets/img/ux-class.svg";
-import laptopImg from "../assets/img/cat-laptop.png";
-// import congrats from "../assets/img/congrat.svg";
 import { useNavigate } from "react-router-dom";
 import rectangle19 from "../assets/img/Rectangle 19.png";
 import rectangle21 from "../assets/img/Rectangle 21.png";
+import calImg from "../assets/img/calendar.svg";
+import laptopImg from "../assets/img/cat-laptop.png";
 import childrenLaptop from "../assets/img/children-laptop.png";
 import airbnb from "../assets/img/company/airbnb.svg";
 import amazon from "../assets/img/company/amazon.svg";
@@ -13,10 +10,13 @@ import faceBook from "../assets/img/company/facebook.svg";
 import google from "../assets/img/company/google.svg";
 import grab from "../assets/img/company/grab.svg";
 import netflix from "../assets/img/company/netflix.svg";
+import congrats from "../assets/img/congrat.svg";
 import girlLaptop from "../assets/img/girl-laptop.png";
+import girlImg from "../assets/img/girl.png";
 import laptopNews from "../assets/img/laptop-news.png";
 import teacherExplaining from "../assets/img/teacher-explaining.png";
 import testimonials from "../assets/img/testimonials.png";
+import uxImg from "../assets/img/ux-class.svg";
 import vcall from "../assets/img/vcall.png";
 
 const Landing = () => {
@@ -24,28 +24,21 @@ const Landing = () => {
   return (
     <div>
 
-      <div className="bg-cream relative">
-        <div className="max-w-screen-xl px-8 pt-20 pb-20 mx-auto flex flex-col lg:flex-row items-start">
-          <div className="flex flex-col w-full lg:w-12/12 justify-center lg:pt-24 items-center text-center lg:text-left mb-5 md:mb-0">
-            <p
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="300"
-              className="leading-normal text-2xl mb-8 font-bold text-red-900"
-            >
-              YOU CAN HELP FOR THEM            </p>
+      <div className="bg-cream">
+        <div className="max-w-screen-xl px-8 pt-11 mx-auto flex flex-col lg:flex-row items-start">
+          <div className="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
             <h1
               data-aos="fade-right"
               data-aos-once="true"
-              className="my-4 text-6xl font-bold leading-tight text-white"
+              className="my-4 text-5xl font-bold leading-tight text-darken"
             >
-              LET'S BRING THEM HOME
+              <span className="text-yellow-500">Designing Dreams,</span>  Delivering Success
             </h1>
             <p
               data-aos="fade-down"
               data-aos-once="true"
               data-aos-delay="300"
-              className="leading-normal text-2xl mb-8 text-white"
+              className="leading-normal text-2xl mb-8"
             >
               We provide a suite of services to propel your business forward in the digital landscape.
             </p>
@@ -53,15 +46,15 @@ const Landing = () => {
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="700"
-              className="w-full md:flex items-center justify-center lg:justify-center md:space-x-5"
+              className="w-full md:flex items-center justify-center lg:justify-start md:space-x-5"
             >
-              <button onClick={() => navigate('contact-us')} className="lg:mx-0 bg-red-900 text-white text-xl font-bold rounded py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out z-50">
-                View Ministries
+              <button onClick={() => navigate('contact-us')} className="lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out z-50">
+                Contact Us
               </button>
 
             </div>
           </div>
-          {/* <div className="w-full lg:w-6/12 lg:-mt-10 relative" id="girl">
+          <div className="w-full lg:w-6/12 lg:-mt-10 relative" id="girl">
             <img
               data-aos="fade-up"
               data-aos-once="true"
@@ -188,24 +181,23 @@ const Landing = () => {
                 alt=""
               />
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="text-white -mt-14 sm:-mt-24 lg:-mt-36 z-40 relative">
-
-          {/* <div className="bg-white w-full h-20 -mt-px"></div> */}
+          <svg
+            className="xl:h-40 xl:w-full"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div className="bg-white w-full h-20 -mt-px"></div>
         </div>
-        <svg
-          className="text-white xl:h-40 xl:w-full absolute bottom-0"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            fill="currentColor"
-          ></path>
-        </svg>
       </div>
 
       <div className="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
@@ -415,8 +407,8 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container-fluid px-4 lg:px-8 mx-auto text-gray-700 bg-yellow-50 pt-2 pb-16 mt-16">
+        </div>
+        <div className="container-fluid px-4 lg:px-8 mx-auto text-gray-700 bg-yellow-50 pt-2 pb-16 mt-16">
         <div className="max-w-screen-xl mx-auto">
           <div className="sm:flex items-center sm:space-x-8 mt-20">
             <div data-aos="fade-right" className="sm:w-1/2 relative">
@@ -430,7 +422,7 @@ const Landing = () => {
                 schools manage scheduling, attendance, payments and virtual
                 classrooms all in one secure cloud-based system.
               </p>
-
+            
             </div>
             <div data-aos="fade-left" className="sm:w-1/2 relative mt-10 sm:mt-0">
               <div
@@ -576,9 +568,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
 
-      <div className="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
+        <div className="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
 
         <div className="mt-24 flex flex-col-reverse md:flex-row items-start md:space-x-10">
           <div data-aos="zoom-in-right" className="md:w-5/12">

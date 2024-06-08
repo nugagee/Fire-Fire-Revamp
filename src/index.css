@@ -5,7 +5,17 @@
 /*primary color*/
 
 .bg-cream {
-  background-color: #232191;
+  /* background-color: #232191; */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient( rgba(3, 1, 50, 0.738) 100%, rgba(8, 1, 43, 0.698)100%),url("../src/assets/img/ffiemc/donate.jpg");
+  /* background-position:  center center; */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  /* background-attachment: fixed;  */
+
 }
 
 body {
@@ -57,5 +67,8 @@ body {
 }
 
 .navBar {
-  background-color: #232191;
+  background-color: #000F21;
+  position: fixed;
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.572);
 }
