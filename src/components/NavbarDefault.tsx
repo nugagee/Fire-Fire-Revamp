@@ -133,7 +133,7 @@ const NavbarDefault = () => {
         {/* <Typography className="mr-4 cursor-pointer py-1.5 text-black font-bold text-2xl"> */}
           <Link to="/">
           <div className="justify-items-center">
-            <img className="" src={churchLogo} style={{height: "13rem"}}/>
+            <img className="" src={churchLogo} style={{height: "8rem"}}/>
           </div>
           </Link>
         {/* </Typography> */}
